@@ -1,0 +1,8 @@
+version: '3'
+services:
+  importer:
+    build: importer
+    links:
+      - mongo
+  mongo:
+    image: mongo
